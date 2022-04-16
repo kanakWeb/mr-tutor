@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Bangla",
+        "price": "2000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi ",
+        "img": "https://i.ibb.co/PCHjfQn/ban.png"
+    },
+    {
+        "id": 2,
+        "name": "Eglish",
+        "price": "1000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi ",
+        "img": "https://i.ibb.co/wQ2H6h7/eng3-1.png"
+    },
+    {
+        "id": 3,
+        "name": "Mathematics",
+        "price": "3350",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi.",
+        "img": "https://i.ibb.co/tXB2VPT/mat.png"
+    },
+    {
+        "id": 4,
+        "name": "Physics",
+        "price": "2800",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi ",
+        "img": "https://i.ibb.co/svYDtHx/phy.png"
+    },
+    {
+        "id": 5,
+        "name": "Biology",
+        "price": "4000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi c.",
+        "img": "https://i.ibb.co/MZ1RWtn/biology2.png"
+    },
+    {
+        "id": 6,
+        "name": "Chemistry",
+        "price": "5000",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi",
+        "img": "https://i.ibb.co/84ShCN6/org-ch.png"
+    }
+]

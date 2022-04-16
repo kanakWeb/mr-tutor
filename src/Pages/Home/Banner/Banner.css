@@ -1,0 +1,9 @@
+.banner {
+  background-image: url("../../../images/banner.jpg"),
+    linear-gradient(#13030511, #460d0d09);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+}
