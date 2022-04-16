@@ -10,7 +10,7 @@ const Banner = () => {
         <h3 className="py-3 fs-3 fw-bold mx-5 text-primary text-center">
           Are you looking for a Home Tutor or Tuition?
         </h3>
-        <p className="text-justify text-info fs-5 text-center w-50 mx-auto"><q>
+        <p className="text-justify text-dark fs-5 text-center w-50 mx-auto"><q>
           Largest Tuition Media in Bangladesh Are you looking for a
           Home Tutor or Tuition? The Biggest Online Home Tutor Media
           and Education Directory. Find a best Home Tutor or Tuition
