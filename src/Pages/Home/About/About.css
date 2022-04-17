@@ -1,0 +1,68 @@
+/* section 1st start................................................. */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  
+  .half img {
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    margin-left: 200px;
+  }
+  .Bar {
+    border-left: 4px solid #f31008d2;
+    padding-left: 5px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    color: rgb(36, 30, 30);
+    font-weight: 700;
+  }
+  .orange {
+    color: orange;
+  }
+  .button {
+    text-decoration: none;
+    padding: 10px 25px;
+    background-image: linear-gradient(red, yellow);
+    border-radius: 7px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .button:hover {
+    background-image: linear-gradient(yellow, red);
+    cursor: pointer;
+    box-shadow: 5px 6px 8px gray;
+    font-size: 15px;
+  }
+  .paragraph {
+    color: rgb(32, 22, 22);
+    text-align: justify;
+    word-spacing: 5px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .half img{
+        margin-left: 0px;
+      }
+    }
+  
+  
+  @media only screen and (min-width: 577px) and (max-width: 992px) {
+    .half img{
+      margin-left: 5px;
+    }
+  }

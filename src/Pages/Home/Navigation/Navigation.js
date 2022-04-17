@@ -18,7 +18,7 @@ const Navigation = () => {
         expand="lg"
         style={{ background: "#efb701" }}
         bg=""
-        className="shadow shadow-large py-3"
+        className="shadow shadow-large py-2"
         variant="dark"
       >
         <Container>
@@ -39,21 +39,21 @@ const Navigation = () => {
               >
                 Home
               </Nav.Link>
-              <Nav.Link
+              <Nav.Link as={Link}
                 className="text-primary fw-bold"
-                href="/#service"
+                to="/services"
               >
                 Services
               </Nav.Link>
-              <Nav.Link
+              <Nav.Link as={Link}
                 className="text-primary fw-bold"
-                href="#blogs"
+                to="blogs"
               >
                 Blogs
               </Nav.Link>
-              <Nav.Link
+              <Nav.Link as={Link}
                 className="text-primary fw-bold"
-                href="#about"
+                to="about"
               >
                 About
               </Nav.Link>

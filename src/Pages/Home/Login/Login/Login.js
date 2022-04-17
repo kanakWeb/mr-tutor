@@ -7,6 +7,7 @@ import auth from "../../../../firebase.init";
 import { async } from "@firebase/util";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import { sendPasswordResetEmail } from "firebase/auth";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -28,9 +29,9 @@ const Login = () => {
     setPassword(event.target.value);
   };
 
-  const handleLogin = (event) => {
+  const handleLogin = async(event) => {
     event.preventDefault();
-    signInWithEmailAndPassword(email,password)
+   await signInWithEmailAndPassword(email,password)
   };
 
   let from = location.state?.from?.pathname || "/";
@@ -44,13 +45,13 @@ const Login = () => {
     }
 
 
-  const ResetPassword=()=>{
+  const ResetPassword=async()=>{
     if(email) {
-      sendPasswordResetEmail(email);
-      alert('Sent email');
+     await sendPasswordResetEmail(email);
+      toast('Sent email');
     }
       else{
-        alert('please enter your email address');
+        toast('please enter your email address');
       }
     }
   return (
