@@ -1,16 +1,22 @@
 import React from "react";
 import { useState } from "react";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 import auth from "../../../../firebase.init";
+import { async } from "@firebase/util";
 import SocialLogin from "../SocialLogin/SocialLogin";
+import { sendPasswordResetEmail } from "firebase/auth";
 
 const Login = () => {
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+
+    const [sendPasswordResetEmail, sending] =
+    useSendPasswordResetEmail(auth);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -32,6 +38,21 @@ const Login = () => {
   if (user) {
     navigate(from, { replace: true });
   }
+
+  if(loading||sending){
+    return <h2 className="text-center">loading......</h2>
+    }
+
+
+  const ResetPassword=()=>{
+    if(email) {
+      sendPasswordResetEmail(email);
+      alert('Sent email');
+    }
+      else{
+        alert('please enter your email address');
+      }
+    }
   return (
     <div>
       <div class="container my-5">
@@ -80,8 +101,8 @@ const Login = () => {
                         id="nombre"
                         name="password"
                         placeholder="please enter your password"
-                        required
-                      />
+                        
+                      required/>
                     </div>
                   </div>
 
@@ -93,7 +114,9 @@ const Login = () => {
                       value="Log in"
                       class="btn btn-info btn-block rounded-2 my-3 py-2"
                     />
+                      <button onClick={ResetPassword} className="btn btn-link  rounded-2 mx-3 text-decoration-none  py-2">Reset password</button>
                   </div>
+                
                   <div className="d-flex align-items-center ">
                     <span>haven't account?</span>
                     <Link
@@ -103,12 +126,14 @@ const Login = () => {
                       Sign up
                     </Link>
                   </div>
+                  <ToastContainer />
                 </div>
                 <SocialLogin></SocialLogin>
               </div>
             </form>
             {/* --Form with header-- */}
           </div>
+      
         </div>
       </div>
     </div>

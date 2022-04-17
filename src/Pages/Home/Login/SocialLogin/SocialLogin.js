@@ -1,6 +1,7 @@
 import React from 'react';
 import auth from "../../../../firebase.init";
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
 
 
 const SocialLogin = () => {
@@ -8,11 +9,15 @@ const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] =
     useSignInWithGoogle(auth);
 
-
+    const navigate=useNavigate()
+    if (user) {
+        navigate("/");
+      }
 
     return (
 
         <div className='py-2 mx-2 d-flex align-items-center justify-content-center '>
+            
             <button onClick={()=>signInWithGoogle()} className="btn my-2 mx-5  btn-info btn-block">With Google signin</button>
             <button className="btn btn-block btn-info ">Signin with Github</button>
             

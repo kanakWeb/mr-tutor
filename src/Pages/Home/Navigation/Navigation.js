@@ -72,7 +72,7 @@ const Navigation = () => {
                   as={Link}
                   to="login"
                 >
-                  Sign In
+                  Log In
                 </Nav.Link>
               )}
             </Nav>
