@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SocialLogin from "../SocialLogin/SocialLogin";
+
+
+
 const SignUp = () => {
-
-
-
-
+  
 
   return (
     <div>
@@ -18,9 +19,7 @@ const SignUp = () => {
                 <div class="card border-primary rounded-0">
                   <div class="card-header p-0">
                     <div class="bg-info text-white text-center py-2">
-                      <h3>
-                        Please Signup
-                      </h3>
+                      <h3>Please Signup</h3>
                       <p class="m-0">pleage right information</p>
                     </div>
                   </div>
@@ -30,7 +29,7 @@ const SignUp = () => {
                       <div class="input-group mb-2">
                         <div class="input-group-prepend">
                           <div class="input-group-text">
-                          <span>@</span>
+                            <span>@</span>
                           </div>
                         </div>
                         <input
@@ -47,7 +46,7 @@ const SignUp = () => {
                       <div class="input-group mb-2">
                         <div class="input-group-prepend">
                           <div class="input-group-text">
-                          <span>@</span>
+                            <span>@</span>
                           </div>
                         </div>
                         <input
@@ -65,11 +64,11 @@ const SignUp = () => {
                       <div class="input-group mb-2">
                         <div class="input-group-prepend">
                           <div class="input-group-text">
-                           <span>@</span>
+                            <span>@</span>
                           </div>
                         </div>
                         <input
-                        type='password'
+                          type="password"
                           class="form-control"
                           placeholder="password"
                           required
@@ -83,16 +82,16 @@ const SignUp = () => {
                         value="Sign up"
                         class="btn btn-info btn-block rounded-0 py-2"
                       />
-                      
                     </div>
-                    <p>already have aaccout?</p>
-                    <Link to='/login'>Login</Link>
+                    <div className="d-flex align-items-center "> 
+                  <span>already haveaccount?</span>
+                  <Link className="btn-link btn mx-2 text-decoration-none btn-block" to="/login">Log In</Link>
                   </div>
+                  </div>
+                 <SocialLogin></SocialLogin>
                 </div>
-               
               </form>
               {/* --Form with header-- */}
-              
             </div>
           </div>
         </div>

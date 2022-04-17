@@ -1,11 +1,16 @@
 .services-title {
-    color: navy;
+    color: #fbb43c;
     text-align: center;
   }
   .services-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+  }
+
+  .all-service{
+    background:#070729;
+    border-radius: 30px;
   }
   
   /* responsive size */

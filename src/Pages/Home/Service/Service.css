@@ -1,6 +1,12 @@
 .service{
-    border: 1px solid rgb(214, 166, 9);
+    border: 1px solid black;
    border-radius: 10px;
    padding-bottom: 10px;
    text-align: center;
+  
+}
+.service:hover{
+    box-shadow: -4px 2px 12px 9px rgba(0,0,0,0.71);
+    -webkit-box-shadow: -4px 2px 12px 9px rgba(0,0,0,0.71);
+    -moz-box-shadow: -4px 2px 12px 9px rgba(0,0,0,0.71);
 }

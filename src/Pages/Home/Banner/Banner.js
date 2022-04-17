@@ -11,11 +11,11 @@ const Banner = () => {
           Are you looking for a Home Tutor or Tuition?
         </h3>
         <p className="text-justify text-dark fs-5 text-center w-50 mx-auto"><q>
-          Largest Tuition Media in Bangladesh Are you looking for a
+          Largest Tuition Mr.Tutor Are you looking for a
           Home Tutor or Tuition? The Biggest Online Home Tutor Media
           and Education Directory. Find a best Home Tutor or Tuition
           Job in Dhaka, Chattogram, Sylhet, Rajshahi, Rangpur or
-          anywhere in Bangladesh. Just register as a Home Tutor for
+          anywhere in Bangladesh (Online service). Just register as a Home Tutor for
           free to get a Tuition or publish a Tuition Circular to hire
           a qualified Tutor without wasting your valuable time.
           </q></p>
