@@ -1,10 +1,47 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
+import auth from "../../../../firebase.init";
 import SocialLogin from "../SocialLogin/SocialLogin";
 
 
 
 const SignUp = () => {
+  const[name,setName]=useState()
+  const[email,SetEmail]=useState()
+  const[password,setPassword]=useState()
+const navigate=useNavigate()
+
+  const [
+    createUserWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
+
+  const handleNameSignup=(event)=>{
+    setName(event.target.value)
+  }
+  
+  const handleEmailSignup=(event)=>{
+    SetEmail(event.target.value)
+  }
+  const handlePasswordSignup=(event)=>{
+    setPassword(event.target.value)
+  }
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  const handleSignup=(event)=>{
+    event.preventDefault()
+     createUserWithEmailAndPassword(email,password)
+    navigate("/");
+
+  }
+
   
 
   return (
@@ -15,7 +52,7 @@ const SignUp = () => {
             <div class="col-12 col-md-8 col-lg-6 pb-5">
               {/* --Form with header-- */}
 
-              <form action="mail.php" method="post">
+              <form onSubmit={handleSignup} >
                 <div class="card border-primary rounded-0">
                   <div class="card-header p-0">
                     <div class="bg-info text-white text-center py-2">
@@ -33,6 +70,7 @@ const SignUp = () => {
                           </div>
                         </div>
                         <input
+                        onChange={handleNameSignup}
                           type="text"
                           class="form-control"
                           id="name"
@@ -50,6 +88,7 @@ const SignUp = () => {
                           </div>
                         </div>
                         <input
+                        onChange={handleEmailSignup}
                           type="email"
                           class="form-control"
                           id="nombre"
@@ -68,6 +107,7 @@ const SignUp = () => {
                           </div>
                         </div>
                         <input
+                        onChange={handlePasswordSignup}
                           type="password"
                           class="form-control"
                           placeholder="password"
@@ -84,7 +124,7 @@ const SignUp = () => {
                       />
                     </div>
                     <div className="d-flex align-items-center "> 
-                  <span>already haveaccount?</span>
+                  <span>already have an ccount?</span>
                   <Link className="btn-link btn mx-2 text-decoration-none btn-block" to="/login">Log In</Link>
                   </div>
                   </div>

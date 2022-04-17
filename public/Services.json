@@ -2,43 +2,43 @@
     {
         "id": 1,
         "name": "Bangla",
-        "price": "2000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi ",
+        "price": "3,000–4,000/month",
+        "description": "Well my teaching style can vary depending on the personality of the student. I consider myself to be optimistic and thus can divert the mind of my students into how studying can be fun. The results they'll be getting will be good because of the plans I have for the teaching",
         "img": "https://i.ibb.co/KbdpZSb/ban-removebg-preview.png"
     },
     {
         "id": 2,
         "name": "Eglish",
-        "price": "1000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi ",
+        "price": "5,000–6,000/month",
+        "description": "I try to capture students' attention through different sets of logic. Assigning them to innovative groups of homework and the applications they can apply on that topic. It allows the students to brainstorm their thoughts about a topic. Monitoring students' progress makes me more vulnerable to their conditions in",
         "img": "https://i.ibb.co/SwCvmGd/eng3-1-removebg-preview-1.png"
     },
     {
         "id": 3,
         "name": "Mathematics",
-        "price": "3350",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi.",
+        "price": "5,000–7,000/month",
+        "description": "I teach my students with patience and in a friendly way. In the first class, I sort out my student's learning technique which suits them. I believe my teaching style will help your child develop his/her academic performance in a significant way  instruction of on their achievements etc. this subject.",
         "img": "https://i.ibb.co/tXB2VPT/mat.png"
     },
     {
         "id": 4,
         "name": "Physics",
-        "price": "2800",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi ",
+        "price": "5,000–8,000/month",
+        "description": "I teach my students with patience and in a friendly way. In the first class, I sort out my student's learning technique which suits them. I believe my teaching style will help your child develop his/her academic performance in a significant way. I will try my best to enlighten the thirst for searching for knowledge. Every teacher has her or his style of teaching. And as traditional teaching styles evolve with the advent of differentiated.",
         "img": "https://i.ibb.co/svYDtHx/phy.png"
     },
     {
         "id": 5,
         "name": "Biology",
-        "price": "4000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi c.",
+        "price": "5,000–6,000/month",
+        "description": " I am good in biology at all levels.If you have any issues in Biology and Chemistry ( college students) and biochemistry and molecular biology and Bioinformatics for university students, then come to me for help.I provide excellent services in both teaching and assignments to students who have great passion and interest to learn these subjects.I will be ready to welcome and help you.I you online platforms...",
         "img": "https://i.ibb.co/MZ1RWtn/biology2.png"
     },
     {
         "id": 6,
         "name": "Chemistry",
-        "price": "5000",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi",
+        "price": "5,000–9,000/month",
+        "description": "you know the Online Chemistry Tutor, a friendly, highly experienced full-time private tutor.  A former Chemistry teacher of students aged 11-18, with over 14 years of teaching experience,  I help students fulfil their potential. If you are struggling with a particular chemistry topic, have missed a school lesson or two through absence and need to catch up, or want to improve your exam technique",
         "img": "https://i.ibb.co/84ShCN6/org-ch.png"
     }
 ]
