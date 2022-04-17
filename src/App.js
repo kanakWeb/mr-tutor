@@ -7,6 +7,7 @@ import Login from './Pages/Home/Login/Login/Login';
 import RequireAuth from './Pages/Home/Login/RequireAuth/RequireAuth';
 import SignUp from './Pages/Home/Login/SignUp/SignUp';
 import Navigation from './Pages/Home/Navigation/Navigation';
+import Notfound from './Pages/Home/Notfound/Notfound';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Checkout></Checkout>
           </RequireAuth>
         }></Route>
+        <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
