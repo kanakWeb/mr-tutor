@@ -28,7 +28,7 @@ const Checkout = () => {
   return (
     <div className="w-100 ">
       <h2 className="text-center py-5 text-primary">
-        CheckOut : tutor----: {serviceId}
+        CheckOut : tutor----Servies-No : {serviceId}
       </h2>
       <div className="card container mb-3">
         <div className="row g-0">
