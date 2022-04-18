@@ -53,6 +53,17 @@ const Login = () => {
         toast('please enter your email address');
       }
     }
+
+    let errorlogin;
+    if (error) {
+      errorlogin = (
+        <p className="text-info bg-danger  text-center p-1 rounded">
+          Error: {error?.message}
+        </p>
+      );
+    }
+
+  
   return (
     <div>
       <div class="container my-5">
@@ -114,6 +125,7 @@ const Login = () => {
                       value="Log in"
                       class="btn btn-info btn-block rounded-2 my-3 py-2"
                     />
+                    <h4>{errorlogin}</h4>
                       <button onClick={ResetPassword} className="btn btn-link  rounded-2 mx-3 text-decoration-none  py-2">Reset password</button>
                   </div>
                 

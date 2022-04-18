@@ -1,28 +1,54 @@
-import React from 'react';
+import React from "react";
 import auth from "../../../../firebase.init";
-import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 
 const SocialLogin = () => {
-
-    const [signInWithGoogle, user, loading, error] =
+  const [signInWithGoogle, user, loading, error] =
     useSignInWithGoogle(auth);
+ 
 
-    const navigate=useNavigate()
-    if (user) {
-        navigate("/");
-      }
+  const navigate = useNavigate();
 
-    return (
+  if (user) {
+    navigate("/");
+  }
 
-        <div className='py-2 mx-2 d-flex align-items-center justify-content-center '>
-            
-            <button onClick={()=>signInWithGoogle()} className="btn my-2 mx-5  btn-info btn-block">With Google signin</button>
-            <button className="btn btn-block btn-info ">Signin with Github</button>
-            
-        </div>
+
+  if(loading){
+   <h2 className="text-center">loading......</h2>
+    }
+
+  let errorSocial;
+
+
+
+  if (error) {
+    errorSocial = (
+      <p className="text-info bg-danger  text-center p-1 rounded">
+        Error: {error?.message}
+      </p>
     );
+  }
+
+  
+  
+
+  return (
+    <div className="py-2 mx-2  align-items-center justify-content-center ">
+      <div className="my-2">
+        
+        <h6 className="">{errorSocial}</h6>
+      </div>
+      
+      <button
+        onClick={() => signInWithGoogle()}
+        className="btn my-3 w-100  btn-info "
+      >
+        With Google signin
+      </button>
+    </div>
+  );
 };
 
 export default SocialLogin;

@@ -66,7 +66,7 @@ const navigate=useNavigate()
                       <div class="input-group mb-2">
                         <div class="input-group-prepend">
                           <div class="input-group-text">
-                            <span>@</span>
+                            <span>🧑🏼‍🤝‍🧑🏻 </span>
                           </div>
                         </div>
                         <input
@@ -84,14 +84,14 @@ const navigate=useNavigate()
                       <div class="input-group mb-2">
                         <div class="input-group-prepend">
                           <div class="input-group-text">
-                            <span>@</span>
+                            <span>📨</span>
                           </div>
                         </div>
                         <input
                         onChange={handleEmailSignup}
                           type="email"
                           class="form-control"
-                          id="nombre"
+                          id="email"
                           name="email"
                           placeholder="email@gmail.com"
                           required
@@ -103,7 +103,7 @@ const navigate=useNavigate()
                       <div class="input-group mb-2">
                         <div class="input-group-prepend">
                           <div class="input-group-text">
-                            <span>@</span>
+                            <span>🔑</span>
                           </div>
                         </div>
                         <input
