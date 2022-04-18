@@ -6,7 +6,6 @@ import { toast, ToastContainer } from "react-toastify";
 import auth from "../../../../firebase.init";
 import { async } from "@firebase/util";
 import SocialLogin from "../SocialLogin/SocialLogin";
-import { sendPasswordResetEmail } from "firebase/auth";
 import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
@@ -74,15 +73,15 @@ const Login = () => {
                     <div class="input-group mb-2">
                       <div class="input-group-prepend">
                         <div class="input-group-text">
-                          <span>@</span>
+                          <span>📨</span>
                         </div>
                       </div>
                       <input
                       onChange={handleLoginEmail}
-                        type="text"
+                        type="email"
                         class="form-control"
-                        id="nombre"
-                        name="nombre"
+                        id="email"
+                        name="email"
                         placeholder="please enter your email"
                         required
                       />
@@ -92,14 +91,14 @@ const Login = () => {
                     <div class="input-group mb-2 my-3">
                       <div class="input-group-prepend">
                         <div class="input-group-text">
-                          <span>@</span>
+                          <span>🔑</span>
                         </div>
                       </div>
                       <input
                       onChange={hanleLoginPassword}
                         type="password"
                         class="form-control"
-                        id="nombre"
+                        id="password"
                         name="password"
                         placeholder="please enter your password"
                         
